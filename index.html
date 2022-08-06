@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/verdana" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-<h1>Kitab mağazası</h1>
-
-<a href="">Ana Səhifə</a>
-<hr>
-
-<h2>David Eagleman - incognito (beyinin gizli həyatı)</h2>
-
-12.00 AZN <del>15.00 AZN</del><br>
-<img height="221" width="146" src="https://raw.githubusercontent.com/TechAcademy-Azerbaijan/bse-hw-day-1-SarkhanAbdullayev/master/day1/images/Inkognito.png" alt="">
-
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem qui alias possimus eos voluptas. Non, sit voluptates! Excepturi recusandae numquam molestiae esse accusantium placeat voluptatibus fugiat odit, aut ipsum neque!</p>
-<br>
+<div class="title"><a href="http://127.0.0.1:5500/index.html?"><p>Kitab Mağazası</p></a></div>
 
 <hr>
-<form action="">
-    <h4>Xüsusiyyətlər</h4>
-    <table border="1" width="100%">
+
+<h2 class="david">David Eagleman - incognito (beyinin gizli həyatı)</h2>
+
+<p class="price"> 12.00 AZN <span class="discount">15.00 AZN</span> </p><br>
+<img class="picture" src="https://raw.githubusercontent.com/TechAcademy-Azerbaijan/bse-hw-day-1-SarkhanAbdullayev/master/day1/images/Inkognito.png" alt="">
+
+<div class="about"><h2>qısa məzmun</h2>
+    <p>Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə edilən və indidən klassik
+    əsərə çevrilən bu kitabı beynin sirli dünyasına təcrübələr, elmi biliklər və tarixi faktlar 
+    işığında səyahət edir. Kitab tibbi mövzuda olsa da, müəllif yazarlıq məharətini və zəngin 
+    biliyini birləşdirərək elmi faktları sadə və müqayisəli dillə oxucularına təqdim edir. 
+    Müəllif əsər boyu sədaqət geni, qumarbazlara çevrilən parkinson xəstələri, gen-mühit 
+    əlaqəsi, “yaxşı” və “pis” gen, şüuraltı və qərarvermə mexanizmi, məsuliyyət anlayışı, 
+    beynin insan həyatında rolu kimi bir çox mövzulara toxunur. Alim bu mövzuların beyinlə 
+    əlaqəsini izah etməklə kifayətlənmir, beyinlə bağlı müxtəlif formullar və modellər irəli 
+    sürür. İnsan psixologiyası və davranışlarına neyron və gen prizmasından baxmağı öyrədir. 
+    Elmi-populyar dildə yazılmış bu kitab xüsusən müəllimlər, psixoloqlar, valideynlər, həkimlər 
+    üçün mühüm bilikləri ehtiva edir.</p></div>
+
+<hr>
+
+<h4>XÜSUSİYYƏTLƏR</h4>
+<table border="1px" width="100%">
         <tr>
             <th>Xüsusiyyət</th>
             <th>Açıqlama</th>
@@ -43,36 +56,47 @@
             <td>Nəşriyyat:</td>
             <td>Qanun Nəşriyyatı</td>
         </tr>
-    </table>
-</form>
+</table>
 
-<hr>
 
-<h4>Şərh yaz</h4>
+<hr><br>
 
-<label for="">Tam adınız:</label><br>
-<input type="text"><br><br>
 
-<label for="">Bu kitabı oxumusunuzmu?</label>
-<input type="checkbox" name="" id=""><br><br>
-
-<label for="">Nə vaxt oxumusunuz?</label>
-<input type="date" name="" id=""><br><br>
-
-<label for="">Hansı dildə oxumusunuz?</label>
-<select name="" id="" >
-    <option>Azərbaycanca</option>
-</select><br><br>
-
-<label for="">Qiymətləndirmə:</label>
-<input type="range" name="" id=""><br><br>
-
-<label for="">Şərhiniz:</label><br>
-<textarea name="" id="" cols="30" rows="10"></textarea><br><br>
-
-<button type="submit">Göndər</button>
-
-<hr>
+<div class="global">
+    <div class="left">
+        <img src="https://raw.githubusercontent.com/TechAcademy-Azerbaijan/bse-hw-day-1-SarkhanAbdullayev/master/day1/images/Inkognito.png" alt="">
+    </div>
+    <div class="center">
+        <form >
+            <h4>ŞƏRH YAZ</h4>
+            
+            <label for="">Tam adınız:</label><br>
+            <input type="text"><br>
+            
+            <label for="">Bu kitabı oxumusunuzmu?</label>
+            <input type="checkbox" name="" id=""><br>
+            
+            <label for="">Nə vaxt oxumusunuz?</label>
+            <input type="date" name="" id=""><br>
+            
+            <label for="">Hansı dildə oxumusunuz?</label>
+            <select name="" id="" >
+                <option>Azərbaycanca</option>
+            </select><br>
+            
+            <label for="">Qiymətləndirmə:</label>
+            <input type="range" name="" id=""><br>
+            
+            <label for="">Şərhiniz:</label><br>
+            <textarea name="" id="" cols="30" rows="9"></textarea><br>
+            
+            <button class="submit" type="submit"></button>
+            </form>
+        </div>
+    <div class="right">
+        <img src="https://raw.githubusercontent.com/TechAcademy-Azerbaijan/bse-hw-day-1-SarkhanAbdullayev/master/day1/images/Inkognito.png" alt="">
+    </div>
+</div>
 
 <ul>
     <li><a href="https://www.facebook.com/">facebook</a></li>
@@ -81,6 +105,11 @@
     <li><a href="https://www.linkedin.com/feed/">linkedin</a></li>
     <li><a href="https://www.google.com/">google</a></li>
 </ul>
+
+<hr>
+<footer>
+    <p>2020 © Bütün haqlar qorunur.</p>
+</footer>
 
 
 </body>

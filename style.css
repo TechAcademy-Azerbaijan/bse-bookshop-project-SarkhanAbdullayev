@@ -1,0 +1,114 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.title a p {
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    line-height: 61px;
+    text-align: center;
+    font-size: 49px;
+    color: #109E97;
+}
+
+.title a {
+    text-decoration: none;
+
+}
+
+.david {
+    font-size: 23px;
+    line-height: 27px;
+    line-height: 27px;
+}
+
+.price {
+    font-family: 'Verdana', sans-serif;
+    color: #008000;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+p span.discount{
+    color: #FF0000;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.picture {
+    width: 200px;
+    height: 302px;
+}
+
+.about {
+    background-color: black;
+    padding: 15px 0px 15px 15px;
+}
+
+.about h2 {
+    text-transform: uppercase;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    line-height: 23px;
+    font-style: normal;
+}
+
+
+.about p {
+    color: white;
+    text-align: right;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+}
+
+
+.formula {
+    text-align: center;
+}
+
+.formula h4 {
+    text-transform: uppercase;
+}
+
+hr {
+    height: 2px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+.global {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.global .left img {
+    width: 300px;
+} 
+.global .right img {
+    width: 300px;
+} 
+.global .center {
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    height: 478px;
+}
+
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    padding: 25px 20px;
+    line-height: 16.41px;
+    background-color: #109E97;
+}
+
+.submit {
+    border: 2px solid #767676;
+    width: 120px;
+    height: 50px;
+    background-color: #109E97;
+}
