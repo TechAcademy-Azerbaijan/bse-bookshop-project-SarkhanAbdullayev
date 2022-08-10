@@ -1,18 +1,29 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+
+.title {
+    background-color: #109E97;
+    height: 132px;
+    width: 100%;
+}
+
 .title a p {
     font-family: 'Lobster', cursive;
-    font-style: normal;
     line-height: 61px;
-    text-align: center;
     font-size: 49px;
-    color: #109E97;
+    color: #FFFFFF;
 }
 
 .title a {
     text-decoration: none;
+    position: absolute  ;
+    top: 33px;
+    left: 40%;
+}
 
+.davidprice {
+    border: 2px solid #B0E9B0;
 }
 
 .david {
@@ -34,20 +45,44 @@ p span.discount{
     text-decoration: line-through;
 }
 
-.picture {
-    width: 200px;
-    height: 302px;
+.first {
+    width: 1103px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid #FFD6D6;
 }
 
+
+.first1 img{
+    width: 300px;
+    height: 100%;
+}
+
+.first2 {
+    width: 718px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+
 .about {
-    background-color: black;
-    padding: 15px 0px 15px 15px;
+    background-color: white;
+    width: 718px;
+    height: 300px;
+    border: 2px solid #B0E9B0;
+    position: absolute;
+    bottom: 0px;
+    
 }
 
 .about h2 {
     text-transform: uppercase;
-    color: white;
-    text-align: right;
+    color: black;
+    text-align: left;
     font-size: 20px;
     line-height: 23px;
     font-style: normal;
@@ -55,40 +90,70 @@ p span.discount{
 
 
 .about p {
-    color: white;
-    text-align: right;
+    color: black;
+    text-align: left;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 2px;
 }
 
-
-.formula {
-    text-align: center;
+.sebet {
+    font-size: 16px;
+    line-height: 23px;
+    width: 149px;
+    height: 48px;
+    border: 1px solid #109E97;
+    border-radius: 4px;
+    background-color: #109E97;
+    color: white;
+    position: absolute;
+    bottom: 0px;
 }
 
-.formula h4 {
+.second {
+    width: 1103px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.second h4 {
     text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 15px;
 }
 
-hr {
-    height: 2px;
-    border-radius: 0px;
-    box-sizing: border-box;
-    border: 1px solid #000000;
+.second table {
+    width: 100%;
+}
+
+.second table tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    line-height: 32px;
+}
+
+th {
+    border: 1px solid black;
 }
 
 .global {
     display: flex;
+    width: 1103px;
+    height: 455px;
     justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
 }
 
 
 .global .left img {
     width: 300px;
+    height: 100%;
 } 
 .global .right img {
     width: 300px;
+    height: 100%;
 } 
 .global .center {
     text-align: center;
@@ -97,22 +162,42 @@ hr {
     height: 478px;
 }
 
+.global .center h4 {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
 
+footer {
+    margin-top: 100px;
+}
 footer p {
+    color: white;
     text-align: center;
     font-size: 14px;
-    padding: 25px 20px;
+    padding: 30px 20px;
     line-height: 16.41px;
     background-color: #109E97;
 }
 
 .submit {
-    border: 2px solid #767676;
-    width: 120px;
-    height: 50px;
+    border: 1px solid #109E97;
+    width: 91px;
+    height: 48px;
     background-color: #109E97;
+    border-radius: 4px;
+    color: white;
 }
 
-.ssilka {
-    text-decoration: none;
+.linkler {
+    position: fixed;
+    top: 300px;
+    right: 15px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 50%;
+    /* background-color: #109E97; */
 }
