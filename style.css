@@ -6,6 +6,7 @@ html {
     background-color: #109E97;
     height: 132px;
     width: 100%;
+    border-bottom: 2px solid black;
 }
 
 .title a p {
@@ -175,7 +176,7 @@ footer p {
     color: white;
     text-align: center;
     font-size: 14px;
-    padding: 30px 20px;
+    padding: 25px 20px;
     line-height: 16.41px;
     background-color: #109E97;
 }
@@ -192,12 +193,9 @@ footer p {
 .linkler {
     position: fixed;
     top: 300px;
-    right: 15px;
+    right: 25px;
 }
 .icon {
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
+    font-size: 50px;
     border-radius: 50%;
-    /* background-color: #109E97; */
 }
