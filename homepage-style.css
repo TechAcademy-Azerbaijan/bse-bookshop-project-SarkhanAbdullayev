@@ -1,0 +1,187 @@
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    background-color: white;
+    height: 132px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title a p {
+    font-family: 'Lobster', cursive;
+    line-height: 61px;
+    font-size: 49px;
+    color: #109E97;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #109E97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+nav ul li {
+    border-left: 1px solid white;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:nth-child(5){
+    border-right: 1px solid white;
+}
+
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 628px;
+    background-image: url(/images/paper_bg\ copy.jpg);
+}
+
+.slider .image img {
+    width: 300px;
+    height: 391px;
+}
+.about {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 55px;
+}
+
+.slider .about p {
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.keshf {
+    width: 148px;
+    height: 44px;
+    background-color: #109E97;
+    color: white;
+    border: 1px solid #109E97;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 15px 5px;
+    
+}
+
+.kitablar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kitablar h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 48px;
+}
+.kitablar .booklist {
+    border: 2px solid #916A6A;
+    /* justify-content: space-evenly; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.booklist-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 0;
+    padding: 50px;
+    /* width: 80%; */
+    justify-content: space-between;
+}
+
+.booklist .inkognito {
+    width: 30%;
+    height: 344px;
+    border: 1px solid #109E97;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.booklist .inkognito img {
+    width: 150px;
+    height: 227px;
+}
+
+.booklist .inkognito a {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 100px;
+}
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 25px 20px;
+    line-height: 16.41px;
+    background-color: #109E97;
+}
+
+.linkler {
+    position: fixed;
+    top: 230px;
+    right: 25px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #109E97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#svernut {
+    background-color: #808080;
+    margin-top: 16px;
+}
+
+.icon i {
+    color: white;
+    font-size: 30px;
+}
