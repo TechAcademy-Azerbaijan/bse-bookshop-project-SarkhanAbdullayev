@@ -8,11 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/bookpg-style.css">
+    <link rel="stylesheet" href="/product-style.css">
 </head>
-<body>
+<body id="bodyscroll">
 
-<div class="title"><a href="/homepage.html"><p>Kitab Mağazası</p></a></div>
+
+<div class="title"><a href="/homepage.html"><p>Kitab mağazası</p></a></div>
+
+<nav>
+    <ul>
+        <li><a href="/homepage.html">ana səhifə</a></li>
+        <li><a href="#">haqqımızda</a></li>
+        <li><a href="#">kateqoriyalar</a></li>
+        <li><a class="fourth" href="#">ayın kitabı</a></li>
+        <li><a href="#">əlaqə</a></li>
+    </ul>
+</nav>
 
 <div class="first">
     <div class="first1">
@@ -27,10 +38,10 @@
             <p class="price">
                 12.00 AZN <span class="discount">15.00 AZN</span>
             </p>
-    </div>
+        </div>
 
-    <div class="about">
-            <h2>qısa məzmun</h2><br>
+        <div class="about">
+            <h2>qısa məzmun</h2>
             <p>Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə 
                 edilən və indidən klassik əsərə çevrilən bu kitabı 
                 beynin sirli dünyasına təcrübələr, elmi biliklər və
@@ -43,11 +54,22 @@
                 “yaxşı” və “pis” gen, şüuraltı və qərarvermə 
                 mexanizmi, məsuliyyət anlayışı, beynin insan 
                 həyatında rolu kimi bir çox mövzulara toxunur.
+                Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə 
+                edilən və indidən klassik əsərə çevrilən bu kitabı 
+                beynin sirli dünyasına təcrübələr, elmi biliklər və
+                tarixi faktlar işığında səyahət edir. Kitab tibbi 
+                mövzuda olsa da, müəllif yazarlıq məharətini və 
+                zəngin biliyini birləşdirərək elmi faktları sadə
+                və müqayisəli dillə oxucularına təqdim edir.
+                Müəllif əsər boyu sədaqət geni, qumarbazlara
+                çevrilən parkinson xəstələri, gen-mühit əlaqəsi,
+                “yaxşı” və “pis” gen, şüuraltı və qərar
             </p>
             <button class="sebet">
                 Səbətə əlavə et
             </button>
-    </div>
+        </div>
+        
     </div>
 </div>
 
@@ -75,7 +97,7 @@
     </table>
 </div>
 
-
+<div class="sherh">şərh yaz</div>
 
 <div class="global">
     <div class="left">
@@ -83,42 +105,47 @@
     </div>
     <div class="center">
         <form >
-            <h4>şərh yaz</h4>
-            
-            <label for="">Tam adınız:</label><br>
-            <input type="text"><br>
-            
-            <label for="">Bu kitabı oxumusunuzmu?</label>
-            <input type="checkbox" name="" id=""><br>
-            
-            <label for="">Nə vaxt oxumusunuz?</label>
-            <input type="date" name="" id=""><br>
-            
-            <label for="">Hansı dildə oxumusunuz?</label>
-            <select name="" id="" >
-                <option>Azərbaycanca</option>
-            </select><br>
-            
-            <label for="">Qiymətləndirmə:</label>
-            <input type="range" name="" id=""><br>
-            
-            <label for="">Şərhiniz:</label><br>
-            <textarea name="" id="" cols="30" rows="9"></textarea><br>
-            
+            <div class="name">
+                <label for="">Tam adınız:</label>
+                <input  type="text">
+            </div>
+            <div class="check">
+                <label for="">Bu kitabı oxumusunuzmu?</label>
+                <input type="checkbox">
+            </div>
+            <div class="date">
+                <label for="">Nə vaxt oxumusunuz?</label>
+                <input type="date" name="" id="">
+            </div>
+            <div class="language">
+                <label for="">Hansı dildə oxumusunuz?</label>
+                <select name="" id="" >
+                    <option>Azərbaycanca</option>
+                </select>
+            </div>
+            <div class="range">
+                <label for="">Qiymətləndirmə:</label>
+            <input type="range" name="" id="">
+            </div>
+            <div    class="textarea">
+                <label for="">Şərhiniz:</label>
+            <textarea name="" id="" cols="30" rows="9"></textarea>
+            </div>
             <button class="submit" type="submit">Göndər</button>
-            </form>
-        </div>
+        </form>
+    </div>
     <div class="right">
         <img src="https://raw.githubusercontent.com/TechAcademy-Azerbaijan/bse-hw-day-1-SarkhanAbdullayev/master/day1/images/Inkognito.png" alt="">
     </div>
 </div>
 
 <div class="linkler">
-    <div class="icon" id="facebook"><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></div>
-    <div class="icon" id="youtube"><a  href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube"></i></a></div>
+    <div class="icon" id="facebook"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></div>
+    <div class="icon" id="youtube"><a  href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></div>
     <div class="icon" id="instagram"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="icon" id="linkedin"><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a><br></div>
+    <div class="icon" id="linkedin"><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i></a><br></div>
     <div class="icon" id="google"><a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a></div>
+    <div class="icon" id="svernut"><a href="#bodyscroll"><i class="fa-solid fa-angles-up"></i></a></div>
 </div>
 
 

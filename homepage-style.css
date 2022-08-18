@@ -1,11 +1,12 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .title {
     background-color: white;
-    height: 132px;
+    height: 112px;
     width: 100%;
     border-bottom: 2px solid black;
     display: flex;
@@ -34,7 +35,7 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 70%;
     justify-content: space-between;
 }
 
@@ -75,7 +76,7 @@ nav li a {
     height: 391px;
 }
 .about {
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -116,7 +117,7 @@ nav li a {
 .kitablar .booklist {
     border: 2px solid #916A6A;
     /* justify-content: space-evenly; */
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
 }
@@ -183,5 +184,5 @@ footer p {
 
 .icon i {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
