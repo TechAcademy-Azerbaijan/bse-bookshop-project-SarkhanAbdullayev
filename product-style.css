@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.content {
+    padding: 0px 20%;
+}
+
 .title {
     background-color: white;
     height: 112px;
@@ -36,7 +40,7 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
     justify-content: space-between;
 }
 
@@ -70,8 +74,8 @@ nav a {
 nav ul li a:not(.fourth):hover{
     color: #109E97;
     background-color: white;
-    
 }
+
 nav ul li a:focus{
     color: white;
     background-color: #094e4b;
@@ -110,10 +114,10 @@ p span.discount{
 }
 
 .first {
-    width: 70%;
+    width: 100%;
     height: 430px;
     position: relative;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
@@ -180,8 +184,8 @@ p span.discount{
 }
 
 .second {
-    width: 70%;
-    margin: auto;
+    /* width: 100%; */
+    /* margin: auto; */
     margin-top: 100px;
 }
 
@@ -213,7 +217,7 @@ p span.discount{
 
 .global {
     display: flex;
-    width: 70%;
+    width: 100%;
     height: 455px;
     justify-content: space-between;
     margin: auto;
@@ -224,20 +228,29 @@ p span.discount{
     opacity: 1;
 }
 
+.global .left {
+    width: 30%;
+}
+
 .global .left img {
-    width: 300px;
+    width: 100%;
     height: 100%;
 } 
+
+.global .right {
+    width: 30%;
+}
+
 .global .right img {
-    width: 300px;
+    width: 100%;
     height: 100%;
 } 
+
 .global .center {
+    width: 25%;
     line-height: 25px;
     font-size: 14px;
     height: 100%;
-    
-
 }
 
 .center form {
@@ -291,7 +304,7 @@ footer p {
 
 .linkler {
     position: fixed;
-    top: 230px;
+    top: 200px;
     right: 25px;
 }
 
@@ -313,4 +326,101 @@ footer p {
 .icon i {
     color: white;
     font-size: 25px;
+}
+/* @media (min-width:1025px){
+    .linkler {
+        top: 200px;
+        right: 25px;
+    }
+} */
+
+@media (max-width:1024px){
+    nav ul {
+        width: 100%;
+    }
+    .content {
+        padding: 10%;
+    }
+    .left, .right {
+        display: none;
+    }
+    .global {
+        justify-content: center;
+        opacity: 1;
+    }
+}
+
+@media (max-width:768px){
+    .first{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 0px;
+    }
+    .first2{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .david, .price {
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .about {
+        align-items: flex-start;
+        border-top: 2px solid black;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .about p {
+        direction: ltr;
+        height: 200px;
+    }
+
+    .content {
+        padding-top: 30px;
+    }
+
+    .linkler {
+        right: 2px;
+    }
+
+}
+
+@media (max-width:600px){
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li{
+        border-right: none;
+        border-top: 1px solid white;
+        width: 80%;
+    }
+    nav ul li:nth-child(1){
+        border-left:none;
+        border-top: none;
+    }
+
+    .linkler {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #svernut {
+        background-color: #808080;
+        margin-top: 0px;
+        position: absolute;
+        right: 0px;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
 }
