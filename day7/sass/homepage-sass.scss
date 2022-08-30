@@ -1,0 +1,14 @@
+@import '_variables';
+@import url(./_reset.scss);
+
+.jumbotron {
+    background-image: url(../assets/jumbotron.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 100vw;
+}
+
+.navbar, .Copyright {
+    background-color: $primary;
+}
+
