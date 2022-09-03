@@ -1,0 +1,168 @@
+@import "./variables";
+@import "./reset";
+@import "./media";
+@import "./main";
+
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.title {
+    background-color: white;
+    height: 112px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    @include flex(center, center);
+    a {
+        text-decoration: none;
+        p {
+            font-family: 'Lobster', cursive;
+            line-height: 61px;
+            font-size: 49px;
+            color: #109E97;
+        }
+    }
+}
+
+nav {
+    background-color: $main;
+    @include flex(center, center);
+    ul {
+        @include flex(space-between, center);
+        width: 70%;
+        li {
+            border-left: 1px solid white;
+            width: 20%;
+            @include flex(center, center);
+        }
+    }
+}
+
+nav ul li:nth-child(5){
+    border-right: 1px solid white;
+}
+
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.slider {
+    @include flex(center, center);
+    width: 100%;
+    height: 628px;
+    background-image: url(/images/paper_bg\ copy.jpg);
+    .image img {
+        width: 300px;
+        height: 391px;
+    }
+}
+
+.about {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 55px;
+    p {
+        margin: 5px;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+}
+
+.keshf {
+    width: 148px;
+    height: 44px;
+    background-color: $main;
+    color: white;
+    border: 1px solid $main;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 15px 5px;
+    
+}
+
+.kitablar {
+    @include flex(unset, center);
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 32px;
+        padding: 48px;
+    }
+}
+
+.kitablar .booklist {
+    border: 2px solid #916A6A;
+    width: 70%;
+    @include flex(center, unset);
+}
+
+.booklist-container{
+    @include flex(space-between, unset);
+    flex-wrap: wrap;
+    gap: 50px 0;
+    padding: 50px;
+}
+
+.booklist .inkognito {
+    width: 30%;
+    height: 344px;
+    border: 1px solid #109E97;
+    flex-direction: column;
+    @include flex(space-evenly, center);
+    img {
+        width: 150px;
+        height: 227px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+footer {
+    margin-top: 100px;
+    p {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        padding: 25px 20px;
+        line-height: 16.41px;
+        background-color: $main;
+    }
+}
+
+.linkler {
+    position: fixed;
+    top: 230px;
+    right: 25px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $main;
+    @include flex(center, center);
+    i {
+        color: white;
+        font-size: 25px;
+    }
+}
+
+#svernut {
+    background-color: #808080;
+    margin-top: 16px;
+}

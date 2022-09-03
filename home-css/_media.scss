@@ -1,0 +1,132 @@
+@mixin xs {
+    @media (min-width: map-get($screens, "xs")){
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: map-get($screens, "sm")){
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: map-get($screens, "md")){
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: map-get($screens, "lg")){
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: map-get($screens, "xl")){
+        @content;
+    }
+}
+@mixin xxl {
+    @media (min-width: map-get($screens, "xxl")){
+        @content;
+    }
+}
+
+
+$grid: 12;
+
+
+.container {
+    width: 100%;
+    padding: 0px 5%;
+    margin: 0px auto;
+}
+
+.container-full {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@include xs {
+    @for $i from 1 to 13 {
+        .col-xs-#{$i} {
+            width: ($i * 100%) / $grid;
+            flex-grow: 0;
+            box-sizing: border-box;
+        }
+    }
+}
+@include sm {
+    @for $i from 1 to 13 {
+        .col-sm-#{$i} {
+            width: ($i * 100%) / $grid;
+            flex-grow: 0;
+            box-sizing: border-box;
+        }
+    }
+}
+@include md {
+    @for $i from 1 to 13 {
+        .col-md-#{$i} {
+            width: ($i * 100%) / $grid;
+            flex-grow: 0;
+            box-sizing: border-box;
+        }
+    }
+}
+@include lg {
+    @for $i from 1 to 13 {
+        .col-lg-#{$i} {
+            width: ($i * 100%) / $grid;
+            flex-grow: 0;
+            box-sizing: border-box;
+        }
+    }
+}
+@include xl {
+    @for $i from 1 to 13 {
+        .col-xl-#{$i} {
+            width: ($i * 100%) / $grid;
+            flex-grow: 0;
+            box-sizing: border-box;
+        }
+    }
+}
+@include xxl {
+    @for $i from 1 to 13 {
+        .col-xxl-#{$i} {
+            width: ($i * 100%) / $grid;
+            flex-grow: 0;
+            box-sizing: border-box;
+        }
+    }
+}
+
+$gaps: (
+    "0": 0rem,
+    "1": 0.5rem,
+    "2": 1rem,
+    "3": 1.5rem,
+    "4": 2rem,
+    "5": 2.5rem,
+);
+
+@each $key, $val in $gaps {
+    .gap-#{$key} > * {
+        padding: $val;
+    }
+    .gap-#{$key} {
+        margin-left: -$val;
+        margin-right: -$val;
+    }
+};
+
+@mixin flex($just, $align) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+}

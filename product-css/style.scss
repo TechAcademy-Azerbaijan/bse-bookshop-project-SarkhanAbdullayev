@@ -1,0 +1,391 @@
+@import "./variables";
+@import "./reset";
+@import "./media";
+@import "./main";
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.content {
+    padding: 0px 20%;
+}
+
+.title {
+    background-color: white;
+    height: 112px;
+    width: 100%;
+    @include flex(center,center);
+    a {
+        text-decoration: none;
+        p {
+            font-family: 'Lobster', cursive;
+            line-height: 61px;
+            font-size: 49px;
+            color: $main;
+        }
+    }
+}
+
+nav {
+    background-color: $main;
+    @include flex(center,center);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    ul {
+        @include flex(space-between,center);
+        width: 60%;
+        li {
+            border-right: 1px solid white;
+            width: 20%;
+            @include flex(center,center);
+        }
+    }
+}
+
+nav ul li:nth-child(1){
+    border-left: 1px solid white;
+}
+nav ul li:nth-child(4){
+    background-color: #094e4b;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 17px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    
+}
+
+nav ul li a:not(.fourth):hover{
+    color: #109E97;
+    background-color: white;
+}
+
+nav ul li a:focus{
+    color: white;
+    background-color: #094e4b;
+}
+
+nav ul .fourth:hover {
+    cursor: default;
+}
+
+.davidprice {
+    width: 100%;
+}
+
+.david {
+    font-size: 20px;
+    line-height: 27px;
+    line-height: 27px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.price {
+    font-family: 'Verdana', sans-serif;
+    color: #008000;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+p span.discount{
+    color: #FF0000;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.first {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    margin-top: 100px;
+    @include flex(space-between,unset);
+}
+
+
+.first1 img {
+    width: 300px;
+    height: 100%;
+}
+
+.first2 {
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    @include flex(space-between,flex-end);
+}
+
+
+.about {
+    background-color: white;
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    @include flex(space-between,flex-end);
+    h2 {
+        text-transform: uppercase;
+        color: black;
+        font-size: 20px;
+        line-height: 23px;
+        font-style: normal;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    p {
+        color: black;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        overflow-y: scroll;
+        direction: rtl;
+        height: 70%;
+    }
+}
+
+.sebet {
+    font-size: 16px;
+    line-height: 23px;
+    width: 149px;
+    height: 48px;
+    border: 1px solid #109E97;
+    border-radius: 4px;
+    background-color: #109E97;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.second {
+    margin-top: 100px;
+    h4 {
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+
+.second table {
+    width: 100%;
+    tr {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        line-height: 32px;
+    }
+}
+
+.sherh {
+    font-size: 26px;
+    text-transform: uppercase;
+    @include flex(center,unset);
+    margin: 100px 0px 20px 0px;
+}
+
+
+.global {
+    @include flex(space-between,unset);
+    width: 100%;
+    height: 455px;
+    margin: auto;
+    opacity: 0.3;
+}
+
+.global:hover{
+    opacity: 1;
+}
+
+.global .left {
+    width: 30%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.global .right {
+    width: 30%;
+    img {
+        width: 100%;
+        height: 100%;
+    } 
+}
+
+
+.global .center {
+    width: 25%;
+    line-height: 25px;
+    font-size: 14px;
+    height: 100%;
+    form {
+        height: 100%;
+        flex-direction: column;
+        @include flex(space-between,center);
+    }
+}
+
+
+form div {
+    @include flex(unset,center);
+}
+
+form .name , form .textarea {
+    flex-direction: column;
+    @include flex(center,unset);
+}
+
+form .check input:checked {
+    width: 20px;
+    height: 20px;
+}
+
+form .name input:focus, form .date input:focus{
+    background-color: yellow;
+}
+
+footer {
+    margin-top: 100px;
+    p {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        padding: 25px 20px;
+        line-height: 16.41px;
+        background-color: $main;
+    }
+}
+
+.submit {
+    border: 1px solid $main;
+    width: 91px;
+    height: 48px;
+    background-color: $main;
+    border-radius: 4px;
+    color: white;
+}
+
+.linkler {
+    position: fixed;
+    top: 200px;
+    right: 25px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $main;
+    @include flex(center,center);
+    i {
+        color: white;
+        font-size: 25px;
+    }
+}
+
+#svernut {
+    background-color: #808080;
+    margin-top: 16px;
+}
+
+@media (max-width:1024px){
+    nav ul {
+        width: 100%;
+    }
+    .content {
+        padding: 10%;
+    }
+    .left, .right {
+        display: none;
+    }
+    .global {
+        justify-content: center;
+        opacity: 1;
+    }
+}
+
+@media (max-width:768px){
+    .first{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 0px;
+    }
+    .first2{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .david, .price {
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .about {
+        align-items: flex-start;
+        border-top: 2px solid black;
+        padding-top: 10px;
+        margin-top: 10px;
+        p {
+            direction: ltr;
+            height: 200px;
+        }
+    }
+
+    .content {
+        padding-top: 30px;
+    }
+
+    .linkler {
+        right: 2px;
+    }
+
+}
+
+@media (max-width:600px){
+    nav ul {
+        flex-direction: column;
+        li{
+            border-right: none;
+            border-top: 1px solid white;
+            width: 80%;
+        }
+    }
+
+    nav ul li:nth-child(1){
+        border-left:none;
+        border-top: none;
+    }
+
+    .linkler {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #svernut {
+        background-color: #808080;
+        margin-top: 0px;
+        position: absolute;
+        right: 0px;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
+}

@@ -1,0 +1,29 @@
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$screens: (
+    "xs": 0px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px,
+);
+
+$colors: (
+    "primary": dodgerblue,
+    "secondary": gray,
+    "warning": red,
+    "success": green,
+    "pink": pink,
+    "white": white,
+    "black": black,
+    "gray": #eaedf2,
+);
+
+$main: #109E97;
+
